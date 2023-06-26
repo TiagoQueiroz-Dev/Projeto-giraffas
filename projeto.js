@@ -13,24 +13,25 @@ var lanche = []
 var estoque = []
 var login = 'giras'
 var senha = '123'
-var confSenha = false
+var confLogin = true
 
 op.get('/',function(req,res){
     res.render('login')
 })
 
 op.post('/inicio',function(req,res){
+    msgErro = req.body.campoErro
     userLogin = req.body.login
     userSenha = req.body.senha
     if(login==userLogin && senha==userSenha){
-        confSenha = true
+        confLogin= false
         res.render('inicio')
+    }else{
+        res.render('login',{confLogin})
+        confLogin=true
     }
 })
 
-op.get('/inicio',function(req,res){
-    res.render('inicio')
-})
 op.get('/lanche',function(req,res){
     res.render('lanche',{lanche})
 })

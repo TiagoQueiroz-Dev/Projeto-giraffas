@@ -1,3 +1,7 @@
 .menu{
     display: none;
 }
+#campoErro{
+    color: red;
+    font-weight: bold; 
+}

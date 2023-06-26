@@ -1,9 +1,15 @@
-<head><link rel="stylesheet" href="/CSS/login.css"></head>
+<head>
+    <link rel="stylesheet" href="/CSS/login.css">
+</head>
+
 <body>
     <form action="/inicio" method="post">
-    <h2>Hora de fazer Login</h2>
-    <input type="text" name="login" placeholder="Login" id="login">
-    <input type="password" name="senha" placeholder="Senha" id="senha">
-    <button type="submit">Login</button>
+        <h2>Hora de fazer Login</h2>
+        <input type="text" name="login" placeholder="Usuário" id="login">
+        <input type="password" name="senha" placeholder="Senha" id="senha">
+        <button type="submit">Login</button>
     </form>
+    {{#if confLogin}}
+    <p id="campoErro">Usuário ou Senha incorreta</p>
+    {{/if}}
 </body>
