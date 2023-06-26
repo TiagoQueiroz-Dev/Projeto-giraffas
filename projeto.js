@@ -11,15 +11,21 @@ op.use(bp.urlencoded({extended:false}))
 op.use(bp.json())
 var lanche = []
 var estoque = []
-var confLogin = false
-
+var login = 'giras'
+var senha = '123'
+var confSenha = false
 
 op.get('/',function(req,res){
     res.render('login')
 })
 
 op.post('/inicio',function(req,res){
-    res.render('inicio')
+    userLogin = req.body.login
+    userSenha = req.body.senha
+    if(login==userLogin && senha==userSenha){
+        confSenha = true
+        res.render('inicio')
+    }
 })
 
 op.get('/inicio',function(req,res){
