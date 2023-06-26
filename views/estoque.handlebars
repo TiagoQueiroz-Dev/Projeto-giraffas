@@ -1,3 +1,12 @@
 <body>
-    <h1> alterar estoque</h1>
+    <h1>estoque</h1>
+
+    {{#each estoque}}
+        <fieldset>
+            {{nome}}
+            {{tipo}}
+            {{setor}}
+            {{descricao}}
+        </fieldset>
+    {{/each}}
 </body>

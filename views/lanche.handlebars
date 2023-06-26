@@ -1,3 +1,13 @@
 <body>
-    <h1> novo lanche</h1>
+    <h1>lanches</h1>
+
+    {{#each lanche}}
+        <fieldset>
+            {{nome}}
+            {{preco}}
+            {{molho1}}
+            {{molho2}}
+            {{descricao}}
+        </fieldset>
+    {{/each}}
 </body>
