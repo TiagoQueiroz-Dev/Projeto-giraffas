@@ -14,8 +14,13 @@ var estoque = []
 var confLogin = false
 
 
-op.post('/',function(req,res){
+op.get('/',function(req,res){
     res.render('login')
+})
+
+op.post('/',function(req,res){
+    
+    res.render('inicio')
 })
 
 op.get('/inicio',function(req,res){
