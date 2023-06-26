@@ -14,13 +14,13 @@ op.get('/',function(req,res){
     res.render('inicio')
 })
 op.get('/cadastro',function(req,res){
-    res.render('inicio')
+    res.render('cadastro')
 })
 op.get('/cadastro/estoque',function(req,res){
-    res.render('inicio')
+    res.render('estoque')
 })
 op.get('/cadastro/lanche',function(req,res){
-    res.render('inicio')
+    res.render('lanche')
 })
 
 op.listen(4090,function(){
