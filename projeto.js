@@ -18,8 +18,7 @@ op.get('/',function(req,res){
     res.render('login')
 })
 
-op.post('/',function(req,res){
-    
+op.post('/login',function(req,res){
     res.render('inicio')
 })
 
