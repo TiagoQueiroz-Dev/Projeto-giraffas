@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Fonts/RobotoCondensed-Regular.ttf');
+}
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background-color: rgb(255, 184, 28);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.titulo{
+    width: 100%;
+    text-align: center;
+}
+.titulo h1{
+    text-shadow: -2.5px -2.5px 0 #ffffff, 2.5px -2.5px 0 #ffffff, -2.5px 2.5px 0 #ffffff, 2.5px 2.5px 0 #ffffff;
+    font-size: calc(20pt + 1vw);
+    color: rgb(237, 139, 38);
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.logo img{
+    min-width: 65px;
+    width: 10vw;
+}
+#linha{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+}
+.menu nav{
+    width: 100%;
+}
+.menu nav ul{
+    background-color: rgb(237, 139, 38);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu nav ul li{
+    color:  white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: calc(10pt + 0.8vw);
+}
