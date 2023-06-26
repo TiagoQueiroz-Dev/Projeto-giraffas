@@ -15,7 +15,7 @@ var confLogin = false
 
 
 op.post('/',function(req,res){
-    
+    res.render('login')
 })
 
 op.get('/inicio',function(req,res){
