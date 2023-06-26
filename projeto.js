@@ -11,8 +11,14 @@ op.use(bp.urlencoded({extended:false}))
 op.use(bp.json())
 var lanche = []
 var estoque = []
+var confLogin = false
 
-op.get('/',function(req,res){
+
+op.post('/',function(req,res){
+    
+})
+
+op.get('/inicio',function(req,res){
     res.render('inicio')
 })
 op.get('/lanche',function(req,res){
