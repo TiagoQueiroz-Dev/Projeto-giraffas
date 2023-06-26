@@ -19,8 +19,8 @@ op.get('/',function(req,res){
 })
 
 op.post('/inicio',function(req,res){
-    userLogin = req.body.userLogin
-    userSenha = req.body.userSenha
+    userLogin = req.body.login
+    userSenha = req.body.senha
     if(login==userLogin && senha==userSenha){
         res.render('inicio')
     }else{
