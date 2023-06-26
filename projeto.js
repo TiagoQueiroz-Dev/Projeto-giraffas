@@ -13,6 +13,7 @@ var lanche = []
 var estoque = []
 var login = 'giras'
 var senha = '123'
+var confSenha = false
 
 op.get('/',function(req,res){
     res.render('login')
@@ -22,9 +23,8 @@ op.post('/inicio',function(req,res){
     userLogin = req.body.login
     userSenha = req.body.senha
     if(login==userLogin && senha==userSenha){
+        confSenha = true
         res.render('inicio')
-    }else{
-        // res.render('login')
     }
 })
 
