@@ -13,7 +13,7 @@ var lanche = []
 var estoque = []
 var login = 'giras'
 var senha = '123'
-var confLogin = true
+var confLogin
 
 op.get('/',function(req,res){
     res.render('login')
@@ -30,6 +30,9 @@ op.post('/inicio',function(req,res){
         res.render('login',{confLogin})
         confLogin=true
     }
+})
+op.get('/inicio',function(req,res){
+    res.render('inicio')
 })
 
 op.get('/lanche',function(req,res){
