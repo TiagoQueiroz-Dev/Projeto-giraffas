@@ -1,0 +1,92 @@
+body{
+    text-align: center;
+}
+h1{
+    font-size: calc(40pt + 1vw);
+    text-shadow: -2.5px -2.5px 0 #ffffff, 2.5px -2.5px 0 #ffffff, -2.5px 2.5px 0 #ffffff, 2.5px 2.5px 0 #ffffff;
+    margin-bottom: 80px;
+    color: rgb(237, 139, 38);
+}
+h2{
+    font-size: calc(20pt + 1vw);
+    text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff;
+    margin-bottom: 80px;
+    color: rgb(237, 139, 38);
+}
+.botao{
+    color:  rgb(255, 255, 255);
+    background: none;
+    font-size: calc(10pt + 0.8vw);
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    border: 2.5px solid #ffffff;
+    background-color: rgb(237, 139, 38);
+    
+    transition-duration: 0.5s;
+}
+.botao:hover{
+    background-color: rgb(237, 61, 38);
+    border: 2.5px solid #ffffff;
+}
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .itens{
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    border-radius: 12px;
+    width: 20%;
+    flex-direction: column;
+    background-color: rgb(237, 139, 38);
+    justify-content: center;
+    align-items: center;
+    height: 35vw;
+  }
+h4{
+    font-weight: lighter;
+    display: flex;
+    font-size: calc(10pt + 0.5vw);
+    padding: 10px;
+    text-align: center;
+  }
+h3{
+    text-align: center;
+    font-size: calc(10pt + 0.5vw);
+    font-weight: bold;
+    /* margin-right: 8px; */
+  }
+  .dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #checkbox{
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 5%;
+    transition-duration: 0.5s;
+  }
+  .selecao nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .selecao .botao{
+    font-size: calc(26pt + 1vw);
+  }
+  .girafa_direita{
+    display: flex;
+   align-items: last baseline;
+}
+.girafa_direita img{
+    width: 15vw;
+}
+.girafa_esquerda img{
+    width: 15vw;
+}

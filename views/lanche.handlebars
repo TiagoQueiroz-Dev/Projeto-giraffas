@@ -1,19 +1,23 @@
+<head><link rel="stylesheet" href="/CSS/produtos.css"></head>
 <body>
-    <input type="button" onclick="window.location.href = 'javascript:history.back()'" value="Voltar">
+    {{#if lanche}}
     <h1>Cardapio</h1>
-
+            <div class="produtos">
     {{#each lanche}}
-        <input type="checkbox" name="" id=""> 
-        <fieldset>
-            <p>Nome: {{nome}}</p>
-            <br>
-            <p>Preço: {{preco}}</p>
-            <br>
-            <p>Molho: {{molho1}}</p>
-            <br>
-            <p>Molho: {{molho2}}</p>
-            <br>
-            <p>Descriçoes{{descricao}}</p>
-        </fieldset>
+                <div class="itens">
+                    <div class="dados">
+                        <h3>Nome: </h3><h4>{{nome}}</h4>
+                        <h3>Preço:</h3><h4>R${{preco}},00</h4>
+                        <h3>Molho:</h3><h4>{{molho1}}</h4>
+                        <h3>Molho:</h3><h4>{{molho2}}</h4>
+                        <h3>Descrição:</h3><h4>{{descricao}}</h4>
+                    </div>
+                <input type="checkbox" name="" id="checkbox"> 
+                </div>
     {{/each}}
+            </div>
+    {{else}}
+    <h2>Nenhum lanche foi cadastrado ainda!</h2>
+    <button class="botao" onclick="window.location.href='/cadastro/lanche'">Clique aqui para cadastrar</button>
+    {{/if}}
 </body>

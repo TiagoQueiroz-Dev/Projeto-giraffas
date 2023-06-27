@@ -60,3 +60,9 @@ h1{
     width: 20vw;
     min-width: 250px;
 }
+.left{
+    display: block;
+}
+.voltar{
+    display: none;
+}

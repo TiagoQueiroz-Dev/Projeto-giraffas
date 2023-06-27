@@ -1,16 +1,22 @@
+<head><link rel="stylesheet" href="/CSS/produtos.css"></head>
 <body>
-    <input type="button" onclick="window.location.href = 'javascript:history.back()'" value="Voltar">
-    <h1>estoque</h1>
-
+    {{#if estoque}}
+    <h1>Estoque</h1>
+    <div class="produtos">
     {{#each estoque}}
-        <fieldset>
-            <p>Nome: {{nome}}</p>
-            <br>
-            <p>Tipo: {{tipo}}</p>
-            <br>
-            <p>Setor: {{setor}}</p>
-            <br>
-            <p>Descriçoes{{descricao}}</p>
-        </fieldset>
+                <div class="itens">
+                    <div class="dados">
+                        <h3>Nome: </h3><h4>{{nome}}</h4>
+                        <h3>Tipo:</h3><h4>{{tipo}}</h4>
+                        <h3>Setor:</h3><h4>{{setor}}</h4>
+                        <h3>Descrição:</h3><h4>{{descricao}}</h4>
+                    </div>
+                <input type="checkbox" name="" id="checkbox"> 
+                </div>
     {{/each}}
+            </div>
+    {{else}}
+    <h2>Nenhum material de estoque foi cadastrado ainda!</h2>
+    <button class="botao" onclick="window.location.href='/cadastro/estoque'">Clique aqui para cadastrar</button>
+    {{/if}}
 </body>
