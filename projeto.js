@@ -14,11 +14,18 @@ var estoque = []
 var login = 'giras'
 var senha = '123'
 var confLogin
+var userLogin
+var userSenha
 
 op.get('/',function(req,res){
     res.render('login')
 })
-
+op.post('/',function(req,res){
+    res.render('login')
+})
+op.get('/usuario',function(req,res){
+    res.render('usuario')
+})
 op.post('/inicio',function(req,res){
     msgErro = req.body.campoErro
     userLogin = req.body.login
