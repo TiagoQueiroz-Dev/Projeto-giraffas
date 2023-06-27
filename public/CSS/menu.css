@@ -8,9 +8,9 @@
     padding: 0;
 }
 body{
-    /* background-color: rgb(255, 221, 121); */
-    margin-top: 350px;
-    height: 2000px;
+    background-color: rgb(255, 229, 201);
+    margin-top: 300px;
+    height: 1500px;
 }
 header{
     top: 0;
@@ -25,14 +25,20 @@ header{
     width: 100%;
     align-items: center;
 }
+.conteudo{
+    display: flex;
+}
 .titulo{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    text-align: center;
+    align-items: center;
 }
 .titulo h1{
     text-shadow: -2.5px -2.5px 0 #ffffff, 2.5px -2.5px 0 #ffffff, -2.5px 2.5px 0 #ffffff, 2.5px 2.5px 0 #ffffff;
     font-size: calc(20pt + 1vw);
     color: rgb(237, 139, 38);
+    margin-bottom: 0;
 }
 .titulo h1:hover{
     color: rgba(255, 0, 0, 0.668);
@@ -45,12 +51,26 @@ header{
     align-items: center;
     width: 100%;
 }
+.voltar{
+border: none;
+background: none;
+margin: 0px 0px 0px 20px;
+cursor: pointer;
+}
+.voltar img{
+    width: 2.5vw;
+    min-width: 30px;
+    padding: 5%;
+    border-radius: 100%;
+    background-color: white;
+}
 .logo{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 .logo img{
+    align-self: center;
     min-width: 65px;
     width: 10vw;
 }
