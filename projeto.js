@@ -11,8 +11,8 @@ op.use(bp.urlencoded({extended:false}))
 op.use(bp.json())
 var lanche = []
 var estoque = []
-var login = 'giras'
-var senha = '123'
+var login //= 'giras'
+var senha //= '123'
 var confLogin
 var userLogin
 var userSenha
@@ -21,6 +21,8 @@ op.get('/',function(req,res){
     res.render('login')
 })
 op.post('/',function(req,res){
+    login = req.body.login
+    senha = req.body.senha
     res.render('login')
 })
 op.get('/usuario',function(req,res){
