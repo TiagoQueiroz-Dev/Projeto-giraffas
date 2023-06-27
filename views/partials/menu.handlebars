@@ -1,22 +1,25 @@
 <head><link rel="stylesheet" href="/CSS/menu.css"></head>
-<header>
+<body>
+    <header>
 <div class="menu">
     <div class="conteudo">
         <div class="logo">
-        <img src="/IMG/logo.png" alt="logo-principal">
-     </div>
-    <div class="titulo"><h1>GIRAFFAS</h1></div>
-    <div class="logo">
             <img src="/IMG/logo.png" alt="logo-principal">
-    </div>
+        </div>
+        <div class="titulo" onclick="window.location.href='/inicio'"><h1>GIRAFFAS</h1></div>
+        <div class="logo">
+                <img src="/IMG/logo.png" alt="logo-principal">
+        </div>
     </div>
     <section id="linha"></section>
         <nav>
             <ul>
-                <li>INÍCIO</li>
-                <li>CADASTRO</li>
+                <button class="button btn1" onclick="window.location.href='/inicio'"><li>INÍCIO</li></button>
+                <section class="linhaVertical"><li></li></section>
+                <button class="button btn2" onclick="window.location.href='/cadastro'"><li>CADASTRO</li></button>
             </ul>
         </nav>
     <section id="linha"></section>
-    </div>
+</div>
 </header>
+</body>

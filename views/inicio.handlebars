@@ -1,12 +1,25 @@
 <head><link rel="stylesheet" href="/CSS/inicio.css"></head>
 <body>
-     <nav>
+     {{!-- <nav>
         <ul>
             <li><a href="/cadastro">cadastro</a></li>
             <li><a href="/inicio">inicio</a></li>
         </ul>
-    </nav>
-    <h1>giraffas</h1>
-    <input type="button" onclick="window.location.href='/lanche'" value="lanches">
-    <input type="button" onclick="window.location.href='/estoque'" value="estoque">
+    </nav> --}}
+        <h1>Bem-vindo ao site da GIRAFFAS</h1>
+        <div class="opcoes">
+            <button class="botao" onclick="window.location.href='/lanche'">
+                <div class="fundo">
+                    <img src="/IMG/lanches.png" alt="Lanches" width="600px" height="600px">
+                    <p>Lanches</p>
+                </div>
+            </button>
+            <button class="botao" onclick="window.location.href='/estoque'">
+                <div class="fundo">
+                    <img src="/IMG/estoque.png" alt="Lanches" width="600px" height="600px">
+                    <p>Estoque</p>
+                </div>
+            </button>
+            
+        </div>
 </body>
