@@ -4,7 +4,7 @@
 
 <body>
     <form action="/inicio" method="post">
-        <h1>HORA DE FAZER O LOGIN</h1>
+        <h1>Hora de fazer Login</h1>
         <img src="../IMG/logo.png" alt="">
         <div>
             <section>
@@ -13,6 +13,9 @@
             </section>
             {{#if confLogin}}
             <p id="campoErro">Usuário ou Senha incorreta</p>
+            {{/if}}
+            {{#if confCadast}}
+            <p id="campoErro">Nenhum usuário cadastrado</p>
             {{/if}}
             <button type="submit">Login</button>
             <button type="button" onclick="window.location.href = '/usuario'">Registrar-se</button>

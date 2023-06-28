@@ -11,8 +11,9 @@ op.use(bp.urlencoded({ extended: false }))
 op.use(bp.json())
 var lanche = []
 var estoque = []
-var login
-var senha
+var login = ""
+var senha = ""
+var confCadast = false
 var confLogin
 var userLogin
 var userSenha
@@ -34,12 +35,17 @@ op.post('/inicio', function (req, res) {
     userLogin = req.body.login
     userSenha = req.body.senha
     if (login == userLogin && senha == userSenha) {
-        confLogin = false   
+        confLogin = false
         res.render('validarLogin')
-        
+
     } else {
-        confLogin = true
-        res.render('login', { confLogin })
+        if (login == "" && senha == "") {
+            confCadast = true
+            res.render('login',{confCadast})
+        } else {
+            confLogin = true
+            res.render('login', { confLogin })
+        }
     }
 })
 op.get('/inicio', function (req, res) {
