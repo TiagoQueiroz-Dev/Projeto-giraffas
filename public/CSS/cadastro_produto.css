@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+    text-shadow: -2.5px -2.5px 0 #ffffff, 2.5px -2.5px 0 #ffffff, -2.5px 2.5px 0 #ffffff, 2.5px 2.5px 0 #ffffff;
+    font-size: calc(20pt + 1vw);
+    color: rgb(237, 139, 38);
+    margin-bottom: 0;
+}
+fieldset{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    width: 100%;
+}
+.bloco{
+    background-color: rgb(237, 139, 38);
+    border-radius: 10px;
+
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+}
+.dados input{
+    font-size: calc(10pt + 0.5vw);
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+}
+.dados textarea{
+    font-size: calc(10pt + 0.5vw);
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+}
+#submit{
+    border: 2px solid white;
+    color: rgb(237, 139, 38);
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+}
+#submit:hover{
+    background-color: rgba(255, 72, 0, 0.668);
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 100px;
+}
+.girafa{
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  .girafa img{
+    width: 20vw;
+  }
+  .girafa_direita{
+    align-self: flex-end;
+  }

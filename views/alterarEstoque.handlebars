@@ -1,15 +1,28 @@
 <head>
+    <link rel="stylesheet" href="/CSS/cadastro_produto.css">
     <script src="/JS/timer.js"></script>
 </head>
 <body>
-    <h1> alterar estoque</h1>
+    <h1>Alterar estoque</h1>
+    <div class="girafa">
+        <div class="girafa_esquerda">
+                <img src="/IMG/girafa_esq.png" alt="">
+        </div>
     <form action="/estoque" method="post">
         <fieldset>
-            <input type="text" name="nome" placeholder="nome">
-            <input type="text" name="tipo" placeholder="tipo">
-            <input type="text" name="setor" placeholder="setor">
-            <textarea name="descricao" placeholder="descricao" id="teste" cols="30" rows="5"></textarea>
-            <input type="submit" onclick="time()" placeholder="enviar">
+                <div class="bloco">
+                        <div class="dados">
+                        <input type="text" name="nome" placeholder="Nome">
+                        <input type="text" name="tipo" placeholder="Tipo">
+                        <input type="text" name="setor" placeholder="Setor">
+                        <textarea name="descricao" placeholder="Descrição" id="teste" cols="30" rows="5"></textarea>
+                        <input type="submit" onclick="time()" value="Cadastrar">
+                    </div>
+                </div>
         </fieldset>
     </form>
+        <div class="girafa_direita">
+                <img src="/IMG/girafa.png" alt="">
+        </div>
+    </div>
 </body>

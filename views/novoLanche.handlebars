@@ -1,13 +1,26 @@
+<head><link rel="stylesheet" href="/CSS/cadastro_produto.css"></head>
 <body>
-    <h1> novo lanche</h1>
+    <h1>Novo lanche</h1>
+    <div class="girafa">
+        <div class="girafa_esquerda">
+                <img src="/IMG/girafa_esq.png" alt="">
+        </div>
     <form action="/lanche" method="post">
         <fieldset>
-            <input type="text" name="nome" placeholder="nome">
-            <input type="text" name="preco" placeholder="preço">
-            <input type="text" name="molho1" placeholder="molho 1">
-            <input type="text" name="molho2" placeholder="molho 2">
-            <textarea name="ingredientes" placeholder="ingredientes" id="teste" cols="30" rows="5"></textarea>
-            <input type="submit" placeholder="enviar">
+            <div class="bloco">
+                <div class="dados">
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="text" name="preco" placeholder="Preço">
+                <input type="text" name="molho1" placeholder="Molho 1">
+                <input type="text" name="molho2" placeholder="Molho 2">
+                <textarea name="ingredientes" placeholder="Ingredientes" id="teste" cols="30" rows="5"></textarea>
+                <input id="submit" type="submit" value="Cadastrar">
+                </div>
+            </div>
         </fieldset>
     </form>
+        <div class="girafa_direita">
+                <img src="/IMG/girafa.png" alt="">
+        </div>
+    </div>
 </body>
