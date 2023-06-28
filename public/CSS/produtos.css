@@ -56,7 +56,8 @@ h2{
     align-items: center;
     height: 30vw;
     justify-content: space-between;
-    
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 15px 15px 15px black;
   }
 /* .itens .dados{
   flex-direction: column;

@@ -38,7 +38,7 @@ fieldset{
 }
 #submit{
     border: 2px solid white;
-    color: rgb(237, 139, 38);
+    color: rgb(0, 0, 0);
     cursor: pointer;
 
     transition-duration: 0.5s;
