@@ -4,16 +4,18 @@
 
 <body>
     <form action="/inicio" method="post">
-        <h1>Hora de fazer Login</h1>
+        <h1>HORA DE FAZER O LOGIN</h1>
+        <img src="../IMG/logo.png" alt="">
         <div>
-            <input type="text" name="login" placeholder="Usuário" id="login">
-            <input type="password" name="senha" placeholder="Senha" id="senha">
-            <button type="button" onclick="window.location.href = '/usuario'">cadastro</button>
+            <section>
+                <input type="text" name="login" placeholder="Usuário" id="login">
+                <input type="password" name="senha" placeholder="Senha" id="senha">
+            </section>
+            {{#if confLogin}}
+            <p id="campoErro">Usuário ou Senha incorreta</p>
+            {{/if}}
             <button type="submit">Login</button>
+            <button type="button" onclick="window.location.href = '/usuario'">Registrar-se</button>
         </div>
     </form>
-
-    {{#if confLogin}}
-    <p id="campoErro">Usuário ou Senha incorreta</p>
-    {{/if}}
 </body>

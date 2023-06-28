@@ -34,7 +34,7 @@ op.post('/inicio', function (req, res) {
     userSenha = req.body.senha
     if (login == userLogin && senha == userSenha) {
         confLogin = false
-
+        
     } else {
         confLogin = true
         res.render('login', { confLogin })
