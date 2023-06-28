@@ -35,14 +35,6 @@ op.post('/inicio', function (req, res) {
     if (login == userLogin && senha == userSenha) {
         confLogin = false
 
-        res.render('validarLogin')
-
-        setTimeout(function () {
-            console.log("Validando Login")
-            res.render('inicio')
-        }, 3000)
-
-
     } else {
         confLogin = true
         res.render('login', { confLogin })
