@@ -28,6 +28,7 @@ op.post('/', function (req, res) {
 op.get('/usuario', function (req, res) {
     res.render('usuario')
 })
+
 op.post('/inicio', function (req, res) {
     msgErro = req.body.campoErro
     userLogin = req.body.login
@@ -35,6 +36,10 @@ op.post('/inicio', function (req, res) {
     if (login == userLogin && senha == userSenha) {
         confLogin = false
 
+        res.render('validarLogin')
+        
+        res.render('inicio')
+        
     } else {
         confLogin = true
         res.render('login', { confLogin })
