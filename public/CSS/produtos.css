@@ -18,8 +18,10 @@ h2{
   width: 100%;
   border-radius: 8px;
 }
+.botao1{
+  width: 100%;
+}
 .botao{
-    width: 100%;
     color:  rgb(255, 255, 255);
     background: none;
     font-size: calc(10pt + 0.8vw);
