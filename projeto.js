@@ -28,13 +28,14 @@ op.post('/', function (req, res) {
 op.get('/usuario', function (req, res) {
     res.render('usuario')
 })
+
 op.post('/inicio', function (req, res) {
     msgErro = req.body.campoErro
     userLogin = req.body.login
     userSenha = req.body.senha
     if (login == userLogin && senha == userSenha) {
         confLogin = false
-        
+
     } else {
         confLogin = true
         res.render('login', { confLogin })
