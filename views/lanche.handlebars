@@ -6,14 +6,25 @@
     {{#each lanche}}
                 <div class="itens">
                     <div class="dados">
-                        <h3>Nome: </h3><h4>{{nome}}</h4>
-                        <h3>Preço:</h3><h4>R${{preco}},00</h4>
-                        <h3>Molho:</h3><h4>{{molho1}}</h4>
-                        <h3>Molho:</h3><h4>{{molho2}}</h4>
-                        <h3>Descrição:</h3><h4>{{descricao}}</h4>
+                        <div class="texto">
+                            <span>Nome: </span><span class="campo">{{nome}}</span>
+                        </div>
+                        <div class="texto">
+                            <span>Preço: </span><span class="campo">R${{preco}},00</span>
+                        </div>
+                        <div class="texto">
+                            <span>Molho: </span><span class="campo">{{molho1}}</span>
+                        </div>
+                        <div class="texto">
+                            <span>Molho: </span><span class="campo">{{molho2}}</span>
+                        </div>
+                        <div class="texto">
+                            <span>Descrição: </span><span class="campo">{{descricao}}</span>
+                        </div>
                     </div>
-                <input type="checkbox" name="" id="checkbox"> 
+                    <input type="checkbox" name="" id="checkbox"> 
                 </div>
+                
     {{/each}}
             </div>
     {{else}}
