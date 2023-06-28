@@ -34,8 +34,9 @@ op.post('/inicio', function (req, res) {
     userLogin = req.body.login
     userSenha = req.body.senha
     if (login == userLogin && senha == userSenha) {
-        confLogin = false
-
+        confLogin = false   
+        res.render('validarLogin')
+        
     } else {
         confLogin = true
         res.render('login', { confLogin })
